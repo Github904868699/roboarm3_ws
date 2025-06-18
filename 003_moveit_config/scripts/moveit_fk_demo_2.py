@@ -5,6 +5,7 @@
 
 import rospy, sys
 import moveit_commander
+import os
 from control_msgs.msg import GripperCommand
 
 class MoveItFkDemo:
@@ -28,7 +29,7 @@ class MoveItFkDemo:
         
         # 关闭并退出moveit
         moveit_commander.roscpp_shutdown()
-        moveit_commander.os._exit(0)
+        os._exit(0)
         
 if __name__ == "__main__":
     try:

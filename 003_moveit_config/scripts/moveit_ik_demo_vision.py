@@ -10,6 +10,7 @@
 
 import rospy, sys
 import moveit_commander
+import os
 from moveit_msgs.msg import RobotTrajectory
 from trajectory_msgs.msg import JointTrajectoryPoint
 
@@ -133,7 +134,7 @@ def MoveItIkDemo():
 
     # 关闭并退出moveit
     moveit_commander.roscpp_shutdown()
-    moveit_commander.os._exit(0)
+    os._exit(0)
 
 # 从/tag_detections刷新xy数据
 #arm_position_x = 0.2 + camera.x

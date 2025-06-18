@@ -29,7 +29,7 @@ def number_callback(msg):
     data.arm_orientation_y = 0.5
     data.arm_orientation_z = 0.5
     data.arm_orientation_w = 0.5
-    print(data.arm_position_x,data.arm_position_x)
+    print(data.arm_position_x, data.arm_position_y)
     if nt % 5 == 0:
         pub.publish(data)
     nt += 1

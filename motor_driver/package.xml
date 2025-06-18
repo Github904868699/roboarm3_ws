@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>motor_driver</name>
+  <version>0.0.0</version>
+  <description>Simple Python motor control publisher</description>
+  <maintainer email="user@example.com">user</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>armcontrol_demo_pkg</build_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>armcontrol_demo_pkg</exec_depend>
+
+</package>

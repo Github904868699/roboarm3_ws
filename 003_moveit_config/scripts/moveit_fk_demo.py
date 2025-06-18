@@ -5,6 +5,7 @@
 
 import rospy, sys
 import moveit_commander
+import os
 from moveit_msgs.msg import RobotTrajectory
 from trajectory_msgs.msg import JointTrajectoryPoint
 
@@ -95,7 +96,7 @@ def MoveItFkDemo():
 
     # 关闭并退出moveit
     moveit_commander.roscpp_shutdown()
-    moveit_commander.os._exit(0)
+    os._exit(0)
 
 
 # 根据接收到的armcontrol_Info更新期望数据
